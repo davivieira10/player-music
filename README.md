@@ -2,7 +2,7 @@
 ## <h1>Player de Música</h1>
 <h2>Projeto desenvolvido para praticar as ferramentas de HTML5, CSS3 e JavaScript.</h2>
 
-<img align="center" alt="To-do List" src="https://i.postimg.cc/9fS7sZJr/player-music.png">
+<img align="center" alt="To-do List" src="https://i.postimg.cc/dVZTJ03h/player-music.png">
 
 [🔗Clique aqui para acessar o projeto](https://davivieira10.github.io/player-music/)
 
