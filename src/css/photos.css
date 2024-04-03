@@ -1,0 +1,176 @@
+:root {
+    font-family: 'Hepta Slab', serif;
+    font-size: 50%;
+    --color: #ffffff;
+    --container-hover: #f7afaf;  
+    --color-nav: #f74b4b;
+}
+
+body {
+    background-image: url(/src/images/fundo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color);
+    padding: 14rem 13.4rem 14rem 11rem;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 1rem;
+    outline: 2px dotted var(--color-nav);
+    width: 45rem;
+    font-family: 'Tilt Prism', cursive;
+}
+
+.container-nav li {
+    list-style-type: none;
+    margin-bottom: 1rem;
+  }
+
+.container-nav a {
+    display: flex;
+    justify-content: center;
+    color: var(--color);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: ease-in-out .5s;
+}
+
+.container-nav a:hover {
+    color: var(--container-hover);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.grid {
+    display: grid;
+    gap: 3.2rem;
+}
+
+header h1 {
+    position: fixed;
+    max-width: 30rem;
+
+    font-size: 4.8rem;
+    font-weight: 400;
+}
+
+header i {
+    font-size: 3.2rem;
+
+    display: block;
+    margin-top: 3.2rem;
+} 
+
+/* gallery  */
+main {
+    margin-left: 50.6rem; /*Equivale a 506px, pois o valor 50.6rem foi dividido por 10 */
+}
+
+.model-1 .container:nth-child(1) {  /* Pode ser feito dessa forma buscando o filho ou criando uma classe com nome de vertical  */
+    grid-row: 1/3;
+}
+
+.model-1 .container:nth-child(1) img,
+.model-2 .container:nth-child(3) img {
+    aspect-ratio: 9/16;
+}
+
+.horizontal {
+    grid-column: 1/3;
+}
+
+.horizontal img {
+    aspect-ratio: 16/9;
+}
+
+.model-2 .container:nth-child(3) {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+/* hover  */
+.container {
+    position: relative;
+
+    outline: 4px solid transparent;
+    transition: all .4s;
+}
+
+.container span {
+    font-size: 2rem;
+
+    display: block;
+    width: 100%;
+    padding: 2.4rem;
+
+    position: absolute;
+    bottom: 0;
+
+    background-image: linear-gradient(to bottom, transparent, black 80%);
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all .4s;
+}
+
+.container:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.container:hover {
+    outline-color: var(--container-hover);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0 1em 0;
+    margin-top: 18rem;
+    line-height: 1.2em;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s ease-in-out;
+  }
+  
+  a:hover {
+    color: #43e7e7;
+    font-weight: bold;
+  }
+ 
+/* Responsivo */
+@media (max-width: 768px) {
+    .grid {
+      width: 150px;
+    }
+
+    header h1 {
+        max-width: 10rem;
+        font-size: 2rem;
+    }
+
+    footer {
+       display: flex;
+       width: 70rem;
+    }
+  }
+

@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Tilt+Prism&display=swap');
+
+:root {
+    --bg-color: #ff0000;
+    --container-hover: #f7afaf;
+    --playlist-title: #f36060;
+    --img: #f86d6d;
+    --color: #ffffff;
+    --color-button: #ec4848;
+    --light-color: rgb(139, 153, 156);
+    --cover: #2b2b2b;
+    --color-nav: #f74b4b;
+}
+
+body {
+    background-color: #000000;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--color);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.playlist-title {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 2rem;
+    height: 3rem;
+    margin: 2rem 0 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    color: var(--playlist-title);
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+#below-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0 1em 0;
+    /*sentindo horário (cima, direita, baixo, esquerda)*/
+}
+
+#button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.button-msg-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: ease-in .5s;
+}
+
+/* Ao passar o mouse em cima dos botões, essa cor é aplicada */
+.button:hover {
+    color: var(--color-button);
+}
+
+/* Quando o botão Repeat e shuffle é clicado, essa cor é aplicada */
+.button-active {
+    color: var(--color-button);
+}
+
+.button-navigate {
+    font-size: 3em;
+}
+
+.button-biggest {
+    font-size: 4em;
+}
+
+#cover {
+    width: 450px;
+    margin-top: 0.1rem;
+    outline: 2px solid var(--color);
+}
+
+#playlist-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0 4em 0;
+    /*sentindo horário (cima, direita, baixo, esquerda)*/
+}
+
+#song-name {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.light-color {
+    color: var(--light-color);
+}
+
+.volume{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 1em;
+  }
+  
+  .volume i{
+    color: #262626;
+    font-size: 20px;
+    cursor: pointer;
+  } 
+
+  #mutedsound, #volumeup {
+    font-size: 2.5em;
+  }
+
+  .volumeSlider {
+    cursor: pointer;
+  }
+
+#progress-bar {
+    background-color: var(--light-color);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#current-progress {
+    --progress: 0%;
+    background-color: var(--color);
+    height: inherit;
+    /*Herda o estilo da classe pai  */
+    width: var(--progress);
+    border-radius: inherit;
+    /*Herda o estilo da classe pai  */
+}
+
+#progress-container {
+    cursor: pointer;
+}
+
+#time-box {
+    display: flex; /*Por padrão já é row*/
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.5em;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0 1em 0;
+    margin-top: 1.5em;
+    line-height: 1.2em;
+    color: #ffffff;
+    letter-spacing: 0.1em;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 1s ease-in-out;
+  }
+  
+  a:hover {
+    color: #43e7e7;
+    font-weight: bold;
+  }
+
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ footer .name {
+    display: flex;
+    padding-left: 0.5em;
+  }

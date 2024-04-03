@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }  
+
+  #cover {
+      width: 275px;
+    }
+
+  footer {
+    font-size: 0.7rem;
+  }
+  }
