@@ -4,7 +4,8 @@
 
 <img align="center" alt="To-do List" src="https://i.postimg.cc/dVZTJ03h/player-music.png">
 
-[🔗Clique aqui para acessar o projeto](https://davivieira10.github.io/player-music/)
+[🔗Clique aqui para acessar o projeto](https://davivieira10.github.io/player-music/
+)
 
 <b>As ferramentas utilizadas foram:</b>
 <div style="display: inline_block"><br>
